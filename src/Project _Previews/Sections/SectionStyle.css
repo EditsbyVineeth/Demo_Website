@@ -1,0 +1,9 @@
+.img_grid{
+    /* background-color: red; */
+
+    transition: all ease-in-out 700ms;
+}
+
+.img_grid:hover{
+    transform: scale(1.1);
+}

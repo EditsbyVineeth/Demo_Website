@@ -1,0 +1,18 @@
+[
+    {
+        "title": "EduMentor: Learn Any time Any where",
+        "description": "An eLearning platform offering a wide range of interactive courses for personalized learning experiences.",
+        "feature1": "Attractive Homepage:  Engage users with a visually appealing and interactive home page ",
+        "feature2": "Course Search Option : Helps in searching personalized courses.",
+        "feature3": "Engaging Multimedia Content: Immerse yourself in interactive lessons, quizzes, and multimedia resources.",
+        "feature4": "Dynamic Course Catalog: Explore a diverse array of courses tailored to your interests and goals.",
+        "feature5": "Responsive designing that suits across all screen sizes.",
+        "technology1": "HTML, CSS, JavaScript",
+        "technology2": "React.js",
+        "technology3": "TailwindCSS",
+        "technology4": "React-router-dom",
+        "technology5": "Nested Routes",
+        "technology6": "Context API",
+        "technology7": "Framer Motion"
+    }
+]

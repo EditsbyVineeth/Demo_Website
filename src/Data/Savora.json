@@ -1,0 +1,16 @@
+[
+    {
+  "title":"Savora",
+  "description":"Where every bite tells a story. Find your perfect taste receips .",
+  "feature1": "Implement Login and SignUp page for personalized user experiences.",
+  "feature2": "Provide personalized dish suggestions based on user preferences.",
+  "feature3": "Enable smooth and efficient page routing for seamless navigation.",
+  "feature4": "Enable smooth and efficient page routing for seamless navigation.",
+  "feature6": "Responsive Design for a consistent and enjoyable user experience across various devices.",
+  "technology1": "Html , CSS , JavaScript",
+  "technology2": "ReactJs",
+  "technology3": "MaterialUI",
+  "technology4": "React-Router-Dom",
+  "technology5": "MaterialUI Icons"
+}
+]

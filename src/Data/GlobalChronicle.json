@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Global Chronicle: where news finds its voice",
+        "description": "A website for getting free realtime news of all categories",
+        "feature1": "Interactive Home Page: Engage users with a visually appealing and interactive home page.",
+        "feature2": "User Authentication Page: Implement Login and SignUp page for personalized experiences.",
+        "feature3": "News API Integration: Seamlessly integrate News API for up-to-date News data.",
+        "feature4": "Diverse Categories including Science,Health, Technology, Sports, War, Politics, Entertainer  etc .",
+        "feature5": "Responsive Design for a consistent and enjoyable user experience across various devices.",
+        "technology1": "Html , css, JavaScript",
+        "technology2": "ReactJs",
+        "technology3": "TailwindCSS",
+        "technology4": "React-Router-Dom",
+        "technology5": "React-Icons",
+        "technology6": "NewsAPI Api",
+        "technology7": "Postman : for API testing"                        
+      
+    }
+]

@@ -3,6 +3,7 @@ import profilePic from "../Assets/ProfilePic22.png";
 import { RoughNotation } from "react-rough-notation";
 import { DataContext } from "../DataContext";
 // import Button from '../CustomComponents/Button'
+import {motion} from 'framer-motion'
 
 function HomePage() {
   const { darkMode, setDarkMode } = useContext(DataContext);
@@ -29,7 +30,11 @@ function HomePage() {
   }, [highlightVisible]);
 
   return (
-    <div
+    <motion.div
+       initial={{opacity:0}}
+       animate={{opacity:1}}
+       transition={{ duration:2}}
+
       className={`${
         darkMode ? "bg-red-600 text-white" : " text-black"
       } homeDiv transition-all duration-500 md:w-full p-6 md:p-1 md:h-full mt-1 md:mt-10 gap-14 md:gap-1
@@ -89,14 +94,18 @@ function HomePage() {
         </div>
       </div>
 
-      <div className=" imgBox w-full md:w-72 md:h-72 mt-12 flex items-center justify-center">
+      <motion.div className=" imgBox w-full md:w-72 md:h-72 mt-12 flex items-center justify-center"
+        initial={{ y:-200, opacity:0}}
+        animate={{ y:0, opacity:1}}
+        transition={{duration:1,delay:1.6, type:'spring', stiffness:200}}
+      >
         <img
           src={profilePic}
           alt="profilePic"
           className=" object-fit w-36 h-48 md:w-48 md:h-56 md:rounded-md transition-transform duration-700 hover:scale-105"
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

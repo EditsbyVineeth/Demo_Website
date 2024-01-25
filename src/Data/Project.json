@@ -1,0 +1,39 @@
+[
+    {
+    "movieflix":{
+        "features": [
+            "Interactive Home Page: Engage users with a visually appealing and interactive home page.",
+            "User Authentication: Implement Login and SignUp page for personalized experiences.",
+            "TMDB API Integration: Seamlessly integrate TMDB (The Movie Database) API for up-to-date movie information.",
+            "Diverse Categories: Explore a wide range of movie categories, including Trending, Netflix Originals, Action Movies, Comedy Films, and Horror entertainers.",
+            "Movie Like Button: Allow users to express their preferences with a 'Like' button for each movie.",
+            "Responsive Design: Ensure a consistent and enjoyable user experience across various devices with a responsive design."
+          ],
+     "technologies" :["React, JavaScript, Tailwindcss, TMDB API"] 
+    }
+},
+
+{
+    "Savora":{
+     "features":[ 
+    "Implement Login and SignUp page for personalized user experiences.",
+     "Provide personalized dish suggestions based on user preferences.",
+     "Enable smooth and efficient page routing for seamless navigation."
+     ],
+     "technologies" :["ReactJs, Javascript, MaterialUI"] 
+    }
+},
+
+{
+    "GlobalChronicle":{
+     "features":[
+        "Login and SignUp page",
+        "Dishe suggestions",
+        "Page routing enabled"
+    ],
+     "technologies" :["ReactJs, Javascript, MaterialUI"] 
+    }
+}
+
+
+]

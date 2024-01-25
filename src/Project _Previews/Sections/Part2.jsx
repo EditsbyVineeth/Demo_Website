@@ -1,65 +1,113 @@
 import React from "react";
-import sampleVideo from '../MovieApp/Images/movieApp_preview.gif';
-// import samImg from "../../Assets/Space Tourism.png";
+import SectionStyle from './SectionStyle.css'
+// import sampleVideo from '../MovieApp/Images/movieApp_preview.gif';
+import samImg from "../../Assets/Space Tourism.png";
 
-function Part2({ projectTitle,projectDesc,secDesc,aboutProject,samImg1,samImg2,samImg3,samImg4,samImg5,samImg6
-
+function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
+  samImg1,samImg2,samImg3,samImg4,samImg5,samImg6,samImg7,samImg8,samImg9,data
 }) {
   return (
-    <div className="scroll_bar w-full h-screen bg-red-500 p-4 px-10 md:overflow-y-scroll ">
-      <div className=" bg-teal-600 flex flex-col  gap-6">
-        <img src="../../Assets/elearning.png" alt="sampleImg" />
-        <div className=" text-4xl font-bold">{projectTitle}</div>
-        <div className=" opacity-60 text-lg">
-         {projectDesc}
+    <div className="scroll_bar  w-full h-screen  p-4 px-10 md:overflow-y-scroll ">
+      <div className="  flex flex-col  gap-6">
+        {/* <img src={samImg} alt="sampleImg" className=" w-full h-32 top-20 object-cover" /> */}
+
+       <div>
+        {data.map((project, key)=>(
+          
+         <>
+            <div className=" text-5xl md:text-6xl text-center  w-10/12 ">{project.title}</div>
+            <div className=" opacity-60 text-lg mt-4">
+             {project.description}
+            </div>
+         </>
+        ))}
         </div>
-        <div className=" mt-14 font-bold text-xl"> What can Website do ? </div>
-        <div>{secDesc}</div>
-        <div>
-          {aboutProject}
-        </div>
-        <ul className=" w-2/3 flex flex-col list-disc ml-20">
-          <li>We tailored the app to Macy's </li>
-          <li>We tailored the app to Macy's </li>
-          <li>We tailored the app to Macy's </li>
-          <li>We tailored the app to Macy's </li>
+
+
+       {/* -------Technologies Used --------------- */}
+
+
+      <div className=" flex flex-col">
+        <span className=" mt-14 font-bold text-xl"> Technologies Used ? </span>
+        <ul className= "w-2/3 flex flex-col list-disc ml-20  opacity-65">
+          {data.map((project, techKey)=>(
+
+          <>
+          { project.technology1 && (<li>{project.technology1}</li>)}
+          { project.technology2 && (<li>{project.technology2}</li>)}
+          { project.technology3 && (<li>{project.technology3}</li>)}
+          { project.technology4 && (<li>{project.technology4}</li>)}
+          { project.technology5 && (<li>{project.technology5}</li>)}
+          { project.technology6 && (<li>{project.technology6}</li>)}
+          { project.technology7 && (<li>{project.technology7}</li>)}
+          </>
+          ))}
         </ul>
-        <div className=" max-w-2/3 bg-red-800">
+      </div>
+
+
+    {/* ----------------- Features ----------------- */}
+
+      <div className=" flex flex-col">  
+        <span className=" font-bold text-xl">Features </span>
+        <ul className=" w-2/3 flex flex-col list-disc ml-20 opacity-65">
+          {data.map((project, featureIndex)=>(
+<>
+  
+            <li>{project.feature1}</li>
+            <li>{project.feature2}</li>
+            <li>{project.feature3}</li>
+            {project.feature4 && (<li>{project.feature4}</li>) }
+            {project.feature5 && (<li>{project.feature5}</li>) }
+            {project.feature6 && (<li>{project.feature6}</li>) }
+            {project.feature7 && (<li>{project.feature7}</li>) }
+           
+</>
+
+          ))}
+        </ul>
+      </div>  
+{/* ------------------ previews ------------------------------ */}
+
+
+        <div className=" max-w-2/3 flex flex-col ">
           <h2 className=" text-xl font-bold mt-8">Preview</h2>
-          <embed src={sampleVideo} className=" w-full" />
+          <embed src={previewVideo1} className=" w-11/12" />
+          <embed src={previewVideo2} className=" w-11/12" />
         </div>
 
-        <div>Screens</div>
+        <div className=" text-2xl font-bold">Screens</div>
 
-        <div className="grid grid-cols-2 gap-1">
-          <div className="bg-yellow-500 ">
-            <img src={samImg1} alt="Image 1" className="w-full h-auto " />
+        <div className="grid grid-cols-3  gap-0.5 bg-black bg-opacity-10 ">
+          <div className=" bg-white flex items-center justify-center ">
+            <img src={samImg1} alt="Image 1" className=" img_grid w-8/12 h-auto " />
           </div>
-          <div className="bg-yellow-500 ">
-            <img src={samImg2} alt="Image 2" className="w-full h-auto " />
+          <div className=" bg-white flex items-center justify-center ">
+            <img src={samImg2} alt="Image 2" className=" img_grid w-8/12 h-auto " />
           </div>
-          <div className="bg-yellow-500 ">
-            <img src={samImg3} alt="Image 3" className="w-full h-auto " />
+          <div className=" bg-white flex items-center justify-center ">
+            <img src={samImg3} alt="Image 3" className=" img_grid w-8/12 h-auto " />
           </div>
-          <div className="bg-yellow-500 ">
-            <img src={samImg4} alt="Image 4" className="w-full h-auto " />
+          <div className=" bg-white flex items-center justify-center ">
+            <img src={samImg4} alt="Image 4" className=" img_grid w-8/12 h-auto " />
           </div>
-          <div className="bg-yellow-500  ">
-            <img src={samImg5} alt="Image 5" className="w-full h-auto " />
+          <div className=" bg-white flex items-center justify-center  ">
+            <img src={samImg5} alt="Image 5" className=" img_grid w-8/12 h-auto " />
           </div>
-          <div className="bg-yellow-500 ">
-            <img src={samImg6} alt="Image 6" className="w-full h-auto " />
+          <div className=" bg-white flex items-center justify-center ">
+            <img src={samImg6} alt="Image 6" className=" img_grid w-8/12 h-auto " />
+          </div>
+          <div className=" bg-white flex items-center justify-center h-60 ">
+            <img src={samImg7} alt="Image 7" className=" img_grid w-10/12 h-auto " />
+          </div>
+          <div className=" bg-white flex items-center justify-center h-60 ">
+            <img src={samImg8} alt="Image 8" className=" img_grid w-10/12 h-auto " />
+          </div>
+          <div className=" bg-white flex items-center justify-center h-60 ">
+            <img src={samImg9} alt="Image 9" className=" img_grid w-10/12 h-auto " />
           </div>
         </div>
 
-        <ul className=" w-2/3 flex flex-col list-disc ml-20">
-          {" "}
-          Dependencies
-          <li>We tailored the app to Macy's </li>
-          <li>We tailored the app to Macy's </li>
-          <li>We tailored the app to Macy's </li>
-          <li>We tailored the app to Macy's </li>
-        </ul>
 
         <h1 className=" font-bold text-xl mt-10">Getting Started</h1>
         <div className=" w-10/12 flex flex-col gap-4 rounded-lg overflow-x-scroll bg-gray-200 p-4">
@@ -72,10 +120,12 @@ function Part2({ projectTitle,projectDesc,secDesc,aboutProject,samImg1,samImg2,s
 
         <div className=" flex flex-col gap-4 p-4">
             <span className=" font-bold text-2xl">Feedback</span>
-            <span className="">
+            <div className=" opacity-70">
               In case you have any feedback or questions, 
-              feel free to open a new issues on this repo or reach out to me 
-            </span>
+              feel free to reach at <span className=" opacity-110 font-bold">https://github.com/callmeVineeth</span> and open a new issues on this repo or reach out to me 
+              at <span className=" opacity-110 font-bold">vineethpv024@gmail.com</span>
+            </div>
+            <span className=" font-extralight opacity-70">Thanks</span>
         </div>
       </div>
     </div>

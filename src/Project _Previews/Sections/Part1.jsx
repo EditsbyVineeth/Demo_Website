@@ -1,23 +1,34 @@
 import React from 'react'
+import { IoMdArrowBack } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import { FaRegFileCode } from "react-icons/fa6";
+import { IoIosLink } from "react-icons/io";
 
-function Part1() {
+
+function Part1({title, description}) {
   return (
-   <div className=' w-full bg-green-500 p-4'>
+   <div className=' w-1/2 flex flex-col justify-between p-4'>
         
-        <div className='bg-yellow-400 flex flex-col p-12 gap-2'>
-            <h1 className=' text-3xl font-semibold'>This is the title of the movie</h1>
-            <div className=' opacity-90 mt-12 md:mt-24'>Shopping experience made simple and familiar by intergrating Macy's
-             products with Tinder swipes!
-             </div>
-             <div>
-                View Project on Git Hub
+        <Link to='/'>  <IoMdArrowBack size={30}/> </Link>
+        <div className='flex flex-col p-12 gap-2'>
+            <h1 className=' text-4xl font-semibold text-blue-600'>{title}</h1>
+            <div className=' opacity-90 mt-1 md:mt-4'>
+              {description}
              </div>
 
-             <span className=' mt-8 flex flex-col'>
-                 <a href='/'>this is the link</a>
-                 <a href='/'>this is the link</a>
-             </span>
+             <div className=' mt-12 flex flex-col'>
+                   <span className=' text-md font-thin text-blue-900'>View the Project on GitHub:</span>
+                 <a className=' mt-4 flex flex-row gap-4 text-blue-600 w-44' target='_blank' href=' https://callmevineeth.github.io/MovieApp/'><IoIosLink size={23}/>Live site</a>
+                 <a className='flex flex-row gap-4 text-blue-600 w-44' target='_blank' href='https://github.com/callmeVineeth/MovieApp'><FaRegFileCode size={23}/> check Code</a>
+             </div>
             </div>
+
+            <div className=' opacity-60 '> feedback  will be appreciated
+
+            </div>
+
+      
+             
    </div>
   )
 }
