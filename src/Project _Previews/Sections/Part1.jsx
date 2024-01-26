@@ -7,7 +7,7 @@ import { IoIosLink } from "react-icons/io";
 
 function Part1({title, description}) {
   return (
-   <div className=' w-1/2 flex flex-col justify-between p-4'>
+   <div className=' w-full md:w-1/2 flex flex-col justify-between p-4'>
         
         <Link to='/'>  <IoMdArrowBack size={30}/> </Link>
         <div className='flex flex-col p-12 gap-2'>

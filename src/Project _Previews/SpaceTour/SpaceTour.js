@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Part1 from '../Sections/Part1'
 import Part2 from '../Sections/Part2'
 
@@ -17,10 +17,21 @@ import Img9 from './Images/Screenshot (288).png'
 
 import SpaceTourData from '../../Data/SpaceTour.json'
 
+import {motion} from 'framer-motion'
+
+
 export default function SpaceTour() {
+
+  useEffect(()=>{
+     window.scrollTo(0,0)
+  })
   return (
-    <div className=' flex flex-col md:flex-row '>
-        <Part1
+    <motion.div className=' flex flex-col md:flex-row '
+    initial={{opacity:0.4, transitionDuration:2, width:0}}
+    animate={{opacity:1, transitionDuration:10, width:'100%'}}
+    transition={{ duration:1}}
+    exit={{opacity:0.4, transitionDuration: 2, width:0}}
+  >        <Part1
          title={'Movieflix'} description={'Explore latest movies and series of all geners'}/>
         
         <Part2 
@@ -32,6 +43,6 @@ export default function SpaceTour() {
          samImg7={Img7} samImg8={Img8} samImg9={Img9} data={SpaceTourData}
 />
       
-    </div>
+    </motion.div>
   )
 }

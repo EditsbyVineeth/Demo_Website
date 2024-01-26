@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Part1 from '../Sections/Part1'
 import Part2 from '../Sections/Part2'
 
@@ -22,6 +22,10 @@ import {motion} from 'framer-motion'
 
 export default function Movie() {
 
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
 
   console.log('MovieFlixData:', MovieFlixData);
 
@@ -31,7 +35,7 @@ export default function Movie() {
       initial={{opacity:0.4, transitionDuration:2, width:0}}
       animate={{opacity:1, transitionDuration:10, width:'100%'}}
       transition={{ duration:1}}
-      // exit={{opacity:0, transitionDuration: 0.6, x:window.innerWidth}}
+      exit={{opacity:0.4, transitionDuration: 2, width:0}}
     >
         <Part1
          title={'Movieflix'} description={'Explore latest movies and series of all geners'}/>

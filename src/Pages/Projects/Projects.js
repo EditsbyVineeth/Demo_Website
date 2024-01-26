@@ -25,8 +25,8 @@ function Projects() {
         className={` ${darkMode && 'text-yellow-400  text-'} w-full text-3xl md:text-6xl font-bold`}>
         projects.
       </span>
-      <div className='flex flex-wrap mt-8 md:mt-14'>
-      <div className=' flex flex-wrap  mt-8 md:mt-14 '>
+      <div className='flex flex-wrap mt-8 md:mt-10'>
+      <div className=' flex flex-wrap  '>
 
            <Link to='/movieApp' > <ProjectTiles  sampleImg={movieapp} content={'A movie app that helps you to explore movies and series of different categories'}/></Link>
            <Link to='/globalChronicle'>  <ProjectTiles  sampleImg={newsapp} content={'Get real time world news at your finger tip'}/>   </Link>

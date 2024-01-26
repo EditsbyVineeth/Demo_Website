@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Part1 from '../Sections/Part1'
 import Part2 from '../Sections/Part2'
 
@@ -15,11 +15,22 @@ import Img7 from './Images/Screenshot (297).png'
 import Img8 from './Images/Screenshot (298).png'
 import Img9 from './Images/Screenshot (299).png'
 
+import {motion} from 'framer-motion'
+
 import GlobalChronicleData from'../../Data/GlobalChronicle.json'
 
 export default function GlobalChronicle() {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
-    <div className=' flex flex-col md:flex-row '>
+
+       <motion.div className=' flex flex-col md:flex-row '
+      initial={{opacity:0.4, transitionDuration:2, width:0}}
+      animate={{opacity:1, transitionDuration:10, width:'100%'}}
+      transition={{ duration:1}}
+      exit={{opacity:0.4, transitionDuration: 2, width:0}}
+    >
         <Part1
          title={'GlobalChronicle'} description={'Where News Finds Its Voice'}/>
         
@@ -32,6 +43,6 @@ export default function GlobalChronicle() {
          samImg7={Img7} samImg8={Img8} samImg9={Img9}  data={GlobalChronicleData}
 />
       
-    </div>
+    </motion.div>
   )
 }

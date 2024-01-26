@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Part1 from '../Sections/Part1'
 import Part2 from '../Sections/Part2'
 
@@ -18,12 +18,22 @@ import Img9 from './Images/Screenshot (275).png'
 
 import SavoraData from '../../Data/Savora.json'
 
+import {motion} from 'framer-motion'
 
 
 function Savora() {
+  useEffect(()=>{
+
+    window.scrollTo(0,0)
+  })
 
   return (
-    <div className=' flex flex-col md:flex-row '>
+       <motion.div className=' flex flex-col md:flex-row '
+      initial={{opacity:0.4, transitionDuration:2, width:0}}
+      animate={{opacity:1, transitionDuration:10, width:'100%'}}
+      transition={{ duration:1}}
+      exit={{opacity:0.4, transitionDuration: 2, width:0}}
+    >
     <Part1
      title={'Savora'} description={'Explore delicious food of your taste and cultu.re with Savora'}/>
     
@@ -39,7 +49,7 @@ function Savora() {
      data={SavoraData}
 />
   
-</div>
+</motion.div>
   )
 }
 

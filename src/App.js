@@ -30,7 +30,7 @@ function App() {
       
     
         <div className={` App ${darkMode && 'bg-red-600'}`}>
-             <Navbar/>  
+             
              <AnimatedRoutes/>
 
              {/* <Routes>

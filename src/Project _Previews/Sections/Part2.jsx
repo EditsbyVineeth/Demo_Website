@@ -15,7 +15,7 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
         {data.map((project, key)=>(
           
          <>
-            <div className=" text-5xl md:text-6xl text-center  w-10/12 ">{project.title}</div>
+            <div className=" text-4xl md:text-6xl text-center  w-full  md:w-10/12 ">{project.title}</div>
             <div className=" opacity-60 text-lg mt-4">
              {project.description}
             </div>
@@ -80,31 +80,31 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
 
         <div className="grid grid-cols-3  gap-0.5 bg-black bg-opacity-10 ">
           <div className=" bg-white flex items-center justify-center ">
-            <img src={samImg1} alt="Image 1" className=" img_grid w-8/12 h-auto " />
+            <img src={samImg1} alt=" screen1" className=" img_grid w-8/12 h-auto " />
           </div>
           <div className=" bg-white flex items-center justify-center ">
-            <img src={samImg2} alt="Image 2" className=" img_grid w-8/12 h-auto " />
+            <img src={samImg2} alt=" screen2" className=" img_grid w-8/12 h-auto " />
           </div>
           <div className=" bg-white flex items-center justify-center ">
-            <img src={samImg3} alt="Image 3" className=" img_grid w-8/12 h-auto " />
+            <img src={samImg3} alt=" screen3" className=" img_grid w-8/12 h-auto " />
           </div>
           <div className=" bg-white flex items-center justify-center ">
-            <img src={samImg4} alt="Image 4" className=" img_grid w-8/12 h-auto " />
+            <img src={samImg4} alt=" screen4" className=" img_grid w-8/12 h-auto " />
           </div>
           <div className=" bg-white flex items-center justify-center  ">
-            <img src={samImg5} alt="Image 5" className=" img_grid w-8/12 h-auto " />
+            <img src={samImg5} alt=" screen5" className=" img_grid w-8/12 h-auto " />
           </div>
           <div className=" bg-white flex items-center justify-center ">
-            <img src={samImg6} alt="Image 6" className=" img_grid w-8/12 h-auto " />
+            <img src={samImg6} alt=" screen6" className=" img_grid w-8/12 h-auto " />
           </div>
           <div className=" bg-white flex items-center justify-center h-60 ">
-            <img src={samImg7} alt="Image 7" className=" img_grid w-10/12 h-auto " />
+            <img src={samImg7} alt=" screen7" className=" img_grid w-10/12 h-auto " />
           </div>
           <div className=" bg-white flex items-center justify-center h-60 ">
-            <img src={samImg8} alt="Image 8" className=" img_grid w-10/12 h-auto " />
+            <img src={samImg8} alt=" screen8" className=" img_grid w-10/12 h-auto " />
           </div>
           <div className=" bg-white flex items-center justify-center h-60 ">
-            <img src={samImg9} alt="Image 9" className=" img_grid w-10/12 h-auto " />
+            <img src={samImg9} alt=" screen9" className=" img_grid w-10/12 h-auto " />
           </div>
         </div>
 

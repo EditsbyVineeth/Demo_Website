@@ -18,6 +18,7 @@ import SpaceTour from './Project _Previews/SpaceTour/SpaceTour';
 import GlobalChronicle from './Project _Previews/GlobalChronicle/GlobalChronicle';
 import Edumentor from './Project _Previews/Edumentor/Edumentor';
 import {AnimatePresence} from 'framer-motion'
+import Navbar from './Pages/Navbar/Navbar';
 
 
 
@@ -27,6 +28,7 @@ function AnimatedRoutes() {
 
   return (
     <AnimatePresence>
+           <Navbar/>
          <Routes location={location} key={location.pathname}>
               <Route path='/' element={
             <>
