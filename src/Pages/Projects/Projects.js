@@ -18,11 +18,11 @@ function Projects() {
 
 
   return (
-    <div className={`${darkMode && 'bg-red-600'} transition-colors duration-500 mt-12 md:mt-32 flex flex-col items-center px-4 md:px-16`}>
+    <div className={`transition-colors duration-500 mt-12 md:mt-32 flex flex-col items-center px-4 md:px-16`}>
       <
         
         span
-        className={` ${darkMode && 'text-yellow-400  text-'} w-full text-3xl md:text-6xl font-bold`}>
+        className={` ${darkMode && 'text-violet-700  text-'} w-full text-3xl md:text-6xl font-bold`}>
         projects.
       </span>
       <div className='flex flex-wrap mt-8 md:mt-10'>

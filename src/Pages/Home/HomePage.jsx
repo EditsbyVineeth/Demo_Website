@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useContext } from "react";
-import profilePic from "../Assets/ProfilePic22.png";
+import Home from './Home.css'
+import profilePic from "../../Assets/ProfilePic22.png";
 import { RoughNotation } from "react-rough-notation";
-import { DataContext } from "../DataContext";
+import { DataContext } from "../../DataContext";
 // import Button from '../CustomComponents/Button'
 import {motion} from 'framer-motion'
 
@@ -36,14 +37,14 @@ function HomePage() {
        transition={{ duration:2}}
 
       className={`${
-        darkMode ? "bg-red-600 text-white" : " text-black"
+        darkMode ? "text-white" : " text-black"
       } homeDiv transition-all duration-500 md:w-full p-6 md:p-1 md:h-full mt-1 md:mt-10 gap-14 md:gap-1
           md:pt-14  flex flex-col-reverse md:flex-row items-start justify-evenly`}
     >
       <div className="  md:w-8/12 h-auto text-left md:text-lg flex flex-col ">
         <div className=" text-xl md:text-3xl font-bold opacity-90 ">
           <span className=" text-3xl md:text-6xl"> Hey I'm Vineeth </span>{" "}
-          <br></br> <span className={`${darkMode && ' text-yellow-400'} text-2xl md:text-4xl`}>ReactJs Developer</span>  based in India.
+          <br></br> <span className={`${darkMode && ' text-violet-600'} text-2xl md:text-4xl`}>ReactJs Developer</span>  based in India.
         </div>
         <br />
         <div className=" opacity-80">
@@ -85,7 +86,7 @@ function HomePage() {
           </button>
           <button
             className={` box__shadow ${
-              darkMode ? "bg-yellow-400 text-white": " bg-black text-white"
+              darkMode ? "bg-violet-700 text-white": " bg-black text-white"
             }
               h-10 w-36 md:w-40  rounded-md m-2`}
           >

@@ -1,5 +1,5 @@
 import './App.css';
-import HomePage from './Pages/HomePage';
+import HomePage from './Pages/Home/HomePage';
 import Navbar from './Pages/Navbar/Navbar';
 // import { DataProvider } from './DataContext';
 import SkillsHome from './Pages/Skills/SkillsHome';
@@ -29,7 +29,7 @@ function App() {
     <Router>
       
     
-        <div className={` App ${darkMode && 'bg-red-600'}`}>
+        <div className={` App ${darkMode && ' bg_pattern  bg_pattern2 text-white'} transition-colors duration-700`}>
              
              <AnimatedRoutes/>
 

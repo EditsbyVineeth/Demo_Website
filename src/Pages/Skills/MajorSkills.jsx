@@ -12,12 +12,12 @@ function MajorSkills() {
 <div>
     <span className=' text-xl'># Frontend Development</span>
     <ul className=' flex flex-wrap'>
-       <li className={`bg-gray-200 text-black skills`}>Html</li>
-       <li className={`bg-gray-200 text-black skills`}>CSS</li>
-       <li className={`bg-gray-200 text-black skills`}>Scss</li>
-       <li className={`bg-gray-200 text-black skills`}>JavaScript</li>
-       <li className={`bg-gray-200 text-black skills`}>ReactJs</li>
-       <li className={`bg-gray-200 text-black skills`}>TypeScript</li>
+       <li className={`${darkMode ? 'bg-violet-600 text-white skills ' : 'bg-gray-100 text-black' } skills`}>Html</li>
+       <li className={`${darkMode ? 'bg-violet-600 text-white skills ' : 'bg-gray-100 text-black' } skills`}>CSS</li>
+       <li className={`${darkMode ? 'bg-violet-600 text-white skills ' : 'bg-gray-100 text-black' } skills`}>Scss</li>
+       <li className={`${darkMode ? 'bg-violet-600 text-white skills ' : 'bg-gray-100 text-black' } skills`}>JavaScript</li>
+       <li className={`${darkMode ? 'bg-violet-600 text-white skills ' : 'bg-gray-100 text-black' } skills`}>ReactJs</li>
+       <li className={`${darkMode ? 'bg-violet-600 text-white skills ' : 'bg-gray-100 text-black' } skills`}>TypeScript</li>
    
     </ul>
 </div>
@@ -25,22 +25,23 @@ function MajorSkills() {
 <div className=' mt-6'>
     <span className=' text-xl'># UI Frameworks</span>
     <ul className=' flex flex-wrap'>
-       <li className=' bg-gray-200 text-black skills'>TailwindCSS</li>
-       <li className=' bg-gray-200 text-black skills'>MaterialUI</li>
-       <li className=' bg-gray-200 text-black skills'>Bootstrap</li>
+       <li className= {`${darkMode ? 'bg-violet-600 text-white' : 'bg-gray-100 text-black' } skills`}>TailwindCSS</li>
+       <li className= {`${darkMode ? 'bg-violet-600 text-white' : 'bg-gray-100 text-black' } skills`}>MaterialUI</li>
+       <li className= {`${darkMode ? 'bg-violet-600 text-white' : 'bg-gray-100 text-black' } skills`}>Bootstrap</li>
+   
    </ul>
 </div>
 
 <div className=' mt-6'>
     <span className=' text-xl'># State Management</span>
     <ul className=' flex flex-wrap'>
-       <li className=' bg-gray-200 text-black skills'>Redux</li>                
+       <li className={`${darkMode ? 'bg-violet-600 text-white ' : 'bg-gray-100 text-black' } skills`}>Redux</li>                
     </ul>
 </div>
 <div className=' mt-6'>
     <span className=' text-xl'># Testing</span>
     <ul className=' flex flex-wrap'>
-       <li className=' bg-gray-200 text-black skills'>Jest</li>                
+       <li className={`${darkMode ? 'bg-violet-600 text-white skills ' : 'bg-gray-100 text-black' } skills`}>Jest</li>                
     </ul>
 </div>
 

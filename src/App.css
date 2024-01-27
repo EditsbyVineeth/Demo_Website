@@ -49,3 +49,17 @@ body{
   
     min-height: 500px;
   }
+
+ 
+  .bg_pattern{
+      background:linear-gradient(to bottom, #0e2435,#08151fe4, #050d13),
+      url('/src/Assets/Grid_background.jpg');
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;   
+      background-position: center center;
+      background-attachment: fixed;  
+      transition: all;
+      transition-duration: 500ms;
+      transition-delay: 0.4s;
+        
+  }

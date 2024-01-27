@@ -9,7 +9,7 @@ const{darkMode} = useContext(DataContext);
 
   return (
 
-    <div className={`${darkMode && 'bg-red-600 text-yellow-400'} transition-colors duration-500 mt-10 md:mt-24 w-full mb-4`}>
+    <div className={`${darkMode && ' text-violet-600'} transition-colors duration-500 mt-10 md:mt-24 w-full mb-4`}>
         <span className='w-full text-3xl md:text-6xl font-bold mt-20 px-6 md:px-24'>contact.</span>
 
        <div className=' w-full flex  flex-col-reverse md:flex-row  '>

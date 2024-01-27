@@ -1,5 +1,5 @@
 import React from 'react'
-import HomePage from './Pages/HomePage';
+import HomePage from './Pages/Home/HomePage.jsx';
 // import Navbar from './Pages/Navbar/Navbar';
 // import { DataProvider } from './DataContext';
 import SkillsHome from './Pages/Skills/SkillsHome';
