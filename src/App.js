@@ -17,7 +17,7 @@ import Savora from './Project _Previews/Savora/Savora';
 import SpaceTour from './Project _Previews/SpaceTour/SpaceTour';
 import GlobalChronicle from './Project _Previews/GlobalChronicle/GlobalChronicle';
 import Edumentor from './Project _Previews/Edumentor/Edumentor';
-import AnimatedRoutes from './AnimatedRoutes';
+// import AnimatedRoutes from './AnimatedRoutes';
 
 
 
