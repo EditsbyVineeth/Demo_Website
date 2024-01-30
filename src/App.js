@@ -11,7 +11,7 @@ import { useContext } from 'react';
 
 import Movie from './Project _Previews/MovieApp/Movie';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Savora from './Project _Previews/Savora/Savora';
 import SpaceTour from './Project _Previews/SpaceTour/SpaceTour';
