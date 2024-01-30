@@ -1,13 +1,24 @@
-import React from 'react'
+import React,{useContext} from 'react'
 // import sampleImg from '../Assets/Movieflix.png'
+import { DataContext } from '../../DataContext';
+
 
 function ProjectTiles({sampleImg, content}) {
-  return (
-    <div className='box__shadow flex flex-row md:flex-col hover:shadow-2xl shadow-black
-       w-full md:w-60 h-44 md:h-72 m-2 md:m-4'>
-        <img src={sampleImg} alt='projectPic' className='project_pic w-1/2 md:w-full z-0 '/>
+  const { darkMode } = useContext(DataContext);
 
-        <span className='  px-2 flex items-center bg-opacity-45 '>
+
+  return (
+    <div className={` ${darkMode && ' bg-gray-800'} box__shadow flex flex-col hover:shadow-2xl shadow-black
+           w-10/12 md:w-96 md:h-auto m-2 md:m-4 pb-12`}
+       >
+        {/* <img src={sampleImg} alt='projectPic' className='project_pic w-1/2 md:w-full z-0 '/> */}
+
+        <div className=' bg-blue-700 object-cover'>
+          <img src={sampleImg} alt='projectPic' className='project_pic z-0  '/>
+          </div>
+       
+
+        <span className='px-2 flex items-center tracking-wide text-2xl font-semibold'>
             {content}
         </span>
 

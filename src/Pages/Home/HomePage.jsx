@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from "react";
-import Home from './Home.css'
 import profilePic from "../../Assets/ProfilePic22.png";
 import { RoughNotation } from "react-rough-notation";
 import { DataContext } from "../../DataContext";
@@ -37,8 +36,8 @@ function HomePage() {
        transition={{ duration:2}}
 
       className={`${
-        darkMode ? "text-white" : " text-black"
-      } homeDiv transition-all duration-500 md:w-full p-6 md:p-1 md:h-full mt-1 md:mt-10 gap-14 md:gap-1
+        darkMode ? "text-white " : " text-black"
+      } homeDiv transition-all duration-500 md:w-full p-6 md:h-full  gap-14 md:gap-1
           md:pt-14  flex flex-col-reverse md:flex-row items-start justify-evenly`}
     >
       <div className="  md:w-8/12 h-auto text-left md:text-lg flex flex-col ">

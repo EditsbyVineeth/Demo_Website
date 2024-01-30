@@ -35,13 +35,7 @@ function Navbar() {
       }  navbar mt-4 md:mt-0 bg-white w-full  rounded-full md:rounded-sm fixed  transition-all 
                  duration-1000 md:h-20 flex items-center md:justify-around`}
     >
-      <div
-        className={
-          " hidden md:block  font-semibold tracking-wider text-3xl italic opacity-55 font-sans "
-        }
-      >
-        VINEETH P V
-      </div>
+   
       <div className=" flex flex-row">
         <ul className=" flex flex-row gap-3 md:gap-6 text-lg md:text-xl font-bold">
           <li className=" cursor-pointer">

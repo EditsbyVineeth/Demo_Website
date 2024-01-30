@@ -18,15 +18,13 @@ function Projects() {
 
 
   return (
-    <div className={`transition-colors duration-500 mt-12 md:mt-32 flex flex-col items-center px-4 md:px-16`}>
-      <
-        
-        span
-        className={` ${darkMode && 'text-violet-700  text-'} w-full text-3xl md:text-6xl font-bold`}>
+    <div className={`transition-colors duration-500 mt-12 md:mt-32 flex flex-col items-center justify-center px-4`}>
+        <span
+        className={` ${darkMode && 'text-violet-700 '} w-full text-3xl md:text-6xl  px-20 font-bold`}>
         projects.
       </span>
       <div className='flex flex-wrap mt-8 md:mt-10'>
-      <div className=' flex flex-wrap  '>
+      <div className=' flex flex-wrap '>
 
            <Link to='/movieApp' > <ProjectTiles  sampleImg={movieapp} content={'A movie app that helps you to explore movies and series of different categories'}/></Link>
            <Link to='/globalChronicle'>  <ProjectTiles  sampleImg={newsapp} content={'Get real time world news at your finger tip'}/>   </Link>

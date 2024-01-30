@@ -1,5 +1,6 @@
 import React from 'react'
 import HomePage from './Pages/Home/HomePage.jsx';
+import Page from './Pages/Page.css'
 // import Navbar from './Pages/Navbar/Navbar';
 // import { DataProvider } from './DataContext';
 import SkillsHome from './Pages/Skills/SkillsHome';

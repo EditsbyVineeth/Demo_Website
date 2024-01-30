@@ -122,8 +122,8 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
             <span className=" font-bold text-2xl">Feedback</span>
             <div className=" opacity-70">
               In case you have any feedback or questions, 
-              feel free to reach at <span className=" opacity-110 font-bold">https://github.com/callmeVineeth</span> and open a new issues on this repo or reach out to me 
-              at <span className=" opacity-110 font-bold">vineethpv024@gmail.com</span>
+              feel free to reach at <span className=" opacity-110 text-blue-800">https://github.com/callmeVineeth</span> and open a new issues on this repo or reach out to me 
+              at <span className=" opacity-110  text-blue-900">vineethpv024@gmail.com</span>
             </div>
             <span className=" font-extralight opacity-70">Thanks</span>
         </div>
