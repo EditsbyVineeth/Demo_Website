@@ -21,8 +21,6 @@ My portfolio website showcases my projects, skills, and experience. It's built u
 
 To run this project locally, follow these steps:
 
-1. Clone the repository to your local machine:
-
    ```bash
    git clone https://github.com/your-username/portfolio.git
    npm install
