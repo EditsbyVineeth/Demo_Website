@@ -3,6 +3,7 @@ import Part1 from '../Sections/Part1'
 import Part2 from '../Sections/Part2'
 
 import preview1 from './Images/SpaceTour_preview.gif'
+import preview2 from './Images/preview_2.gif'
 
 
 import Img1 from './Images/Screenshot (278).png'
@@ -37,7 +38,7 @@ export default function SpaceTour() {
          />
         
         <Part2 
-        projectTitle={'MovieFlix'}   previewVideo1={preview1} 
+        projectTitle={'MovieFlix'}   previewVideo1={preview1}  previewVideo2={preview2}
         projectDesc={'An unofficial Netflix clone where you can explore different movies and series'} 
          secDesc={'kfhdhf sodhfodoffsdfdfffffff dfd '}  
          aboutProject={''}  

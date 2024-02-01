@@ -7,7 +7,7 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
   samImg1,samImg2,samImg3,samImg4,samImg5,samImg6,samImg7,samImg8,samImg9,data
 }) {
   return (
-    <div className="scroll_bar  w-full md:w-2/3 h-screen text-md  p-4 md:px-10 md:overflow-y-scroll  bg-white text-black mr-32">
+    <div className="scroll_bar  w-full h-screen text-md  p-4 md:px-10 md:overflow-y-scroll  bg-white text-black mr-32">
       <div className="  flex flex-col  gap-6">
         {/* <img src={samImg} alt="sampleImg" className=" w-full h-32 top-20 object-cover" /> */}
 

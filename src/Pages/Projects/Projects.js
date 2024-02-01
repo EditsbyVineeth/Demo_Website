@@ -12,13 +12,15 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+
+
 function Projects() {
   const { darkMode, setDarkMode } = useContext(DataContext);
 
 
 
   return (
-    <div className={`transition-colors duration-500 mt-12 md:mt-32 flex flex-col items-center justify-center px-4`}>
+    <div className={`transition-colors duration-500 mt-12 md:mt-32 flex flex-col items-center justify-center px-10`}>
         <span
         className={` ${darkMode && 'text-violet-700 '} w-full text-3xl md:text-6xl  px-20 font-bold`}>
         projects.
