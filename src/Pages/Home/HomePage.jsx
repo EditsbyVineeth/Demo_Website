@@ -10,6 +10,27 @@ function HomePage() {
 
   const [highlightVisible, setHighlightVisible] = useState(false);
 
+  const handleDownloadResume = () => {
+    const resumePath = '../../Assets/VineethPV_Resume (3).pdf';
+  
+    // Create a temporary anchor element
+    const anchorElement = document.createElement('a');
+    anchorElement.href = resumePath;
+    anchorElement.download = 'resume.pdf';
+  
+    // Add a temporary attribute to the anchor element
+    anchorElement.setAttribute('target', '_blank');
+    anchorElement.setAttribute('rel', 'noopener noreferrer');
+  
+    // Append the anchor element to the document body
+    document.body.appendChild(anchorElement);
+  
+    // Simulate a click on the anchor element to trigger download
+    anchorElement.click();
+  };
+  
+  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setHighlightVisible((prevState) => !prevState);
@@ -28,6 +49,8 @@ function HomePage() {
 
     return () => clearTimeout(timeout);
   }, [highlightVisible]);
+
+
 
   return (
     <motion.div
@@ -80,6 +103,7 @@ function HomePage() {
             className={` box__shadow ${
               darkMode && " bg-white text-black"
             } h-10 w-36 md:w-40  border-black border-2 rounded-md m-2`}
+            onClick={handleDownloadResume}
           >
             Resume
           </button>
