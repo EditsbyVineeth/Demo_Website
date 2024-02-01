@@ -116,7 +116,7 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
 
         <h1 className=" font-bold text-xl mt-10">Getting Started</h1>
         <div className=" w-10/12 flex flex-col gap-4 rounded-lg overflow-x-scroll bg-gray-200 p-4">
-          <span>git clone https://github.com/mitulsavani/react-native-macysExpress.git</span>
+          
           <span> npm install </span>
           <span> npm install </span>
           <span> npm install </span>
