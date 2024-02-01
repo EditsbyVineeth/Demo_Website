@@ -6,7 +6,7 @@ import { DataContext } from "../../DataContext";
 import {motion} from 'framer-motion'
 
 function HomePage() {
-  const { darkMode, setDarkMode } = useContext(DataContext);
+  const { darkMode } = useContext(DataContext);
 
   const [highlightVisible, setHighlightVisible] = useState(false);
 
@@ -77,14 +77,13 @@ function HomePage() {
           <br />
           <div className="-mt-4  transition-all duration-1000">
             My expertise extends to working with a multitude of 
-            <span className=" text-blue-800">technologies</span> and
+            <span className=" text-blue-800"> technologies </span> and
              <span className=" text-blue-800"> frameworks</span>.
             <br />
             For the past 6 months I have been working on various frontend
             languages and tools.  I've been actively
             engaged in tasks involving HTML, CSS, and JavaScript, crafting
             <span className=" text-blue-800"> visually appealing </span> and <span className=" text-blue-800">responsive</span>  user interfaces.
-            <a className=" text-blue-800" href="/">Read more Aboutme...</a>
           </div>
           <div className=" mt-2 ">
             {" "}
@@ -112,9 +111,9 @@ function HomePage() {
             className={` box__shadow ${
               darkMode ? "bg-violet-700 text-white": " bg-black text-white"
             }
-              h-10 w-36 md:w-40  rounded-md m-2`}
+              h-10 w-36 md:w-40 rounded-md m-2`}
           >
-            View GitHub
+            <a href="https://github.com/callmeVineeth" target="_blank"> View GitHub </a>
           </button>
         </div>
       </div>
