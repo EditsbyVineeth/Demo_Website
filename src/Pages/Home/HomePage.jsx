@@ -11,7 +11,8 @@ function HomePage() {
   const [highlightVisible, setHighlightVisible] = useState(false);
 
   const handleDownloadResume = () => {
-    const resumePath = '/src/Assets/VineethPV_Resume (3).pdf';
+    const resumePath = process.env.PUBLIC_URL + '/VineethPV_Resume (3).pdf';
+
                                                                    
     // Create a temporary anchor element
     const anchorElement = document.createElement('a');
