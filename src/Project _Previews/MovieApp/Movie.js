@@ -24,10 +24,7 @@ export default function Movie() {
 
   useEffect(()=>{
     window.scrollTo(0,0)
-  },[])
-
-
-  console.log('MovieFlixData:', MovieFlixData);
+  })
 
 
   return (
@@ -39,7 +36,7 @@ export default function Movie() {
      exit={{opacity:0.4, transitionDuration: 2, width:0}}
     >
       <Part1
-        title={'Movieflix'} description={'Explore latest movies and series of all genres'}
+        title={'Movieflix'}
         liveSite={'https://callmevineeth.github.io/MovieApp/'}  gitCode={'https://github.com/callmeVineeth/MovieApp'}
       />
         

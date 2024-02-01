@@ -32,7 +32,7 @@ export default function GlobalChronicle() {
       exit={{opacity:0.4, transitionDuration: 2, width:0}}
     >
         <Part1
-         title={'GlobalChronicle'} description={'Where News Finds Its Voice'}
+         title={'GlobalChronicle'}
          liveSite={'https://github.com/callmeVineeth/Global-Chronicle'} gitCode={'https://github.com/callmeVineeth/Global-Chronicle'}
          />
         

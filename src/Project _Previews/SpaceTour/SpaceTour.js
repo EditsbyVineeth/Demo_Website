@@ -33,14 +33,12 @@ export default function SpaceTour() {
     transition={{ duration:1}}
     exit={{opacity:0.4, transitionDuration: 2, width:0}}
   >        <Part1
-         title={'Movieflix'} description={'Explore latest movies and series of all geners'}
+         title={'Space Tour'}
          gitCode={'https://github.com/callmeVineeth/SpaceTour'}  liveSite={' https://callmevineeth.github.io/SpaceTour/'}
          />
         
         <Part2 
-        projectTitle={'MovieFlix'}   previewVideo1={preview1}  previewVideo2={preview2}
-        projectDesc={'An unofficial Netflix clone where you can explore different movies and series'} 
-         secDesc={'kfhdhf sodhfodoffsdfdfffffff dfd '}  
+        projectTitle={'SpaceTour'}   previewVideo1={preview1}  previewVideo2={preview2}
          aboutProject={''}  
          samImg1={Img1}  samImg2={Img2}  samImg3={Img3}  samImg4={Img4}  samImg5={Img5}  samImg6={Img6} 
          samImg7={Img7} samImg8={Img8} samImg9={Img9} data={SpaceTourData}

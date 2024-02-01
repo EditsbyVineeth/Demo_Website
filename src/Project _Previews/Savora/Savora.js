@@ -35,7 +35,7 @@ function Savora() {
       exit={{opacity:0.4, transitionDuration: 2, width:0}}
     >
     <Part1
-     title={'Savora'} description={'Explore delicious food of your taste and cultu.re with Savora'}/>
+     title={'Savora'} />
     
     <Part2 
     projectTitle={'Savora'}  

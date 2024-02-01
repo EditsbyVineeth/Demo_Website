@@ -35,7 +35,7 @@ export default function Edumentor() {
     exit={{opacity:0.4, transitionDuration: 2, width:0}}
     >
         <Part1
-         title={'EduMentor'} description={'Learn Any Time, Any Where'}
+         title={'EduMentor'}
          liveSite={'https://callmevineeth.github.io/EdMentor02/'}  gitCode={'https://github.com/callmeVineeth/EdMentor02'}
          />
         
