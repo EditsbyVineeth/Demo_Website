@@ -8,7 +8,7 @@ function ProjectTiles({sampleImg, content}) {
 
 
   return (
-    <div className={` ${darkMode && ' bg-gray-800'} flex flex-col shadow-sm shadow-black
+    <div className={` ${darkMode && ' bg-violet-800'} flex flex-col shadow-sm shadow-black
             md:h-auto m-2 md:m-4 pb-12`}
        >
         {/* <img src={sampleImg} alt='projectPic' className='project_pic w-1/2 md:w-full z-0 '/> */}
@@ -18,7 +18,7 @@ function ProjectTiles({sampleImg, content}) {
           </div>
        
 
-        <span className='px-2 flex items-center tracking-wide text-2xl font-semibold'>
+        <span className='px-2 flex items-center justify-center tracking-wide text-2xl font-semibold'>
             {content}
         </span>
 

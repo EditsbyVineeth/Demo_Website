@@ -1,40 +1,48 @@
-import React ,{useContext} from 'react'
-import Toolbox from './Toolbox'
-import Skills from './Skills.css'
-import MajorSkills from './MajorSkills'
-import DevelopmentSkills from './DevelopmentSkills'
-import { DataContext } from '../../DataContext'
+import React, { useContext } from 'react'
+import skills from './Skills.css'
+
+import { SiJquery } from "react-icons/si";
+import { FaGitSquare, FaReact } from "react-icons/fa";
+import { IoLogoHtml5 } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiTailwindcss } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { SiJest } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa6";
+import { FaSquareGithub } from "react-icons/fa6";
+import { SiMui } from "react-icons/si";
+import { TbBrandVscode } from "react-icons/tb";
+
+import { FaArrowRight } from "react-icons/fa6";
+import { DataContext } from '../../DataContext';
 
 
 
+export default function SkillsHome(){
+  const{darkMode} = useContext(DataContext)
+  
+    return (
+      <div  className={`${darkMode && ''} skillSets w-full flex flex-col items-center justify-center gap-10  mt-24 md:mt-56 `}>
+        <span className={`${darkMode && ' text-violet-600'}  text-3xl md:text-5xl font-bold text-left w-full px-20`}> My Toolbox</span>
+        <section className='flex flex-row md:flex-col items-center justify-evenly gap-4 md:gap-10'>
 
-function SkillsHome() {
-
-  const {darkMode} = useContext(DataContext)
-  // const { darkMode, setDarkMode } = useContext(DataContext);
-
-  return (
-    <div className={`transition-colors duration-500 md:mt-24 py-16 px-10 md:px-20`}>
-        <nav  className={`${darkMode && 'text-violet-600'} text-3xl md:text-6xl font-bold`}>skills and Interests.</nav>
-        <div className=' flex flex-col md:flex-row  md:mt-10 mx-h-56'>
-
-            <div className=' md:w-1/2 md:border-r-2 border-gray-500 flex flex-col items-center py-12'> 
-                <MajorSkills/>
+            <div className=' grid grid-cols-3 md:grid-cols-4  gap-4'>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}><IoLogoHtml5/></span>   <span className=' font-semibold text-xl'>html</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}><IoLogoJavascript/></span>  <span className=' font-semibold text-xl'>javascript</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}><FaReact/></span>  <span className=' font-semibold text-xl'>ReactJs</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}><SiTailwindcss/></span>  <span className=' font-semibold text-xl'>TailwindCss</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}> <FaBootstrap/></span>   <span className=' font-semibold text-xl'>Bootstrap</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}><FaGitAlt/></span>  <span className=' font-semibold text-xl'>GitLab</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}><SiJquery/></span>  <span className=' font-semibold text-xl'>jQuery</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}><FaGitSquare/></span>  <span className=' font-semibold text-xl'>Github</span></div> 
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}> <SiMui/></span>  <span className=' font-semibold text-xl'>M U I</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}> <FaSquareGithub/></span>  <span className=' font-semibold text-xl'>Github</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}><SiJest/></span>   <span className=' font-semibold text-xl'>Jest</span></div>
+                <div className=' flex flex-col items-center justify-center backdrop-blur-sm p-2 rounded-md shadow-xl'> <span className={` ${darkMode && 'text-violet-600'} text-7xl md:ml-20`}> <TbBrandVscode/></span>  <span className=' font-semibold text-xl'>VsCode</span></div>
             </div>
-            <div className=' w-full md:w-1/2 flex flex-wrap justify-center items-center'> 
+          
+             </section>
+      </div>
+    )
+  }
 
-              <DevelopmentSkills developmentSkill={'Web Designing'}/>
-              <DevelopmentSkills developmentSkill={'Frontend Development'}/>
-              <DevelopmentSkills developmentSkill={'Bug Fixing'}/>
-              <DevelopmentSkills developmentSkill={'Testing'}/>
-                {/* <Toolbox/> */}
-
-            </div>
-
-        </div>
-
-    </div>
-  )
-}
-
-export default SkillsHome
