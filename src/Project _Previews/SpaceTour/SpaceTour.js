@@ -32,7 +32,9 @@ export default function SpaceTour() {
     transition={{ duration:1}}
     exit={{opacity:0.4, transitionDuration: 2, width:0}}
   >        <Part1
-         title={'Movieflix'} description={'Explore latest movies and series of all geners'}/>
+         title={'Movieflix'} description={'Explore latest movies and series of all geners'}
+         gitCode={'https://github.com/callmeVineeth/SpaceTour'}  liveSite={' https://callmevineeth.github.io/SpaceTour/'}
+         />
         
         <Part2 
         projectTitle={'MovieFlix'}   previewVideo1={preview1} 

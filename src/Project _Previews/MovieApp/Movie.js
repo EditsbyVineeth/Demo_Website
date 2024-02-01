@@ -17,7 +17,7 @@ import Img8 from './Images/Screenshot (267).png'
 import Img9 from './Images/Screenshot (269).png'
 
 import MovieFlixData from '../../Data/Movieflix.json'
-import {motion} from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 
 export default function Movie() {
@@ -31,22 +31,25 @@ export default function Movie() {
 
 
   return (
+    <AnimatePresence>
     <motion.div className=' flex flex-col md:flex-row '
-      initial={{opacity:0.4, transitionDuration:2, width:0}}
-      animate={{opacity:1, transitionDuration:10, width:'100%'}}
-      transition={{ duration:1}}
-      exit={{opacity:0.4, transitionDuration: 2, width:0}}
+     initial={{opacity:0.4, transitionDuration:2, width:0}}
+     animate={{opacity:1, transitionDuration:10, width:'100%'}}
+     transition={{ duration:1}}
+     exit={{opacity:0.4, transitionDuration: 2, width:0}}
     >
-        <Part1
-         title={'Movieflix'} description={'Explore latest movies and series of all geners'}/>
+      <Part1
+        title={'Movieflix'} description={'Explore latest movies and series of all genres'}
+        liveSite={'https://callmevineeth.github.io/MovieApp/'}  gitCode={'https://github.com/callmeVineeth/MovieApp'}
+      />
         
-        <Part2 
+      <Part2 
         projectTitle={'MovieFlix'}   previewVideo1={preview1} previewVideo2={preview2} 
         projectDesc={'An unofficial Netflix clone where you can explore different movies and series'}  
-         samImg1={Img1}  samImg2={Img2}  samImg3={Img3}  samImg4={Img4}  samImg5={Img5}  samImg6={Img6} 
-         samImg7={Img7} samImg8={Img8} samImg9={Img9} data={MovieFlixData}
-/>
-      
+        samImg1={Img1}  samImg2={Img2}  samImg3={Img3}  samImg4={Img4}  samImg5={Img5}  samImg6={Img6} 
+        samImg7={Img7} samImg8={Img8} samImg9={Img9} data={MovieFlixData}
+      />
     </motion.div>
+    </AnimatePresence>
   )
 }

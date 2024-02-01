@@ -7,7 +7,7 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
   samImg1,samImg2,samImg3,samImg4,samImg5,samImg6,samImg7,samImg8,samImg9,data
 }) {
   return (
-    <div className="scroll_bar  w-full h-screen  p-4 px-10 md:overflow-y-scroll  bg-white text-black mr-32">
+    <div className="scroll_bar  w-full md:w-2/3 h-screen text-md  p-4 md:px-10 md:overflow-y-scroll  bg-white text-black mr-32">
       <div className="  flex flex-col  gap-6">
         {/* <img src={samImg} alt="sampleImg" className=" w-full h-32 top-20 object-cover" /> */}
 
@@ -15,8 +15,8 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
         {data.map((project, key)=>(
           
          <>
-            <div className=" text-4xl md:text-6xl text-center  w-full  md:w-10/12 ">{project.title}</div>
-            <div className=" opacity-60 text-lg mt-4">
+            <div className=" text-3xl md:text-5xl text-center  w-full  md:w-10/12 ">{project.title}</div>
+            <div className=" opacity-60 text-lg mt-4 italic">
              {project.description}
             </div>
          </>
@@ -29,7 +29,7 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
 
       <div className=" flex flex-col">
         <span className=" mt-14 font-bold text-xl"> Technologies Used ? </span>
-        <ul className= "w-2/3 flex flex-col list-disc ml-20  opacity-65">
+        <ul className= "w-2/3 flex flex-col list-disc ml-12 md:ml-20  opacity-65">
           {data.map((project, techKey)=>(
 
           <>
@@ -50,7 +50,7 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
 
       <div className=" flex flex-col">  
         <span className=" font-bold text-xl">Features </span>
-        <ul className=" w-2/3 flex flex-col list-disc ml-20 opacity-65">
+        <ul className=" w-2/3 flex flex-col list-disc ml-12 md:ml-20 opacity-65">
           {data.map((project, featureIndex)=>(
 <>
   
@@ -76,9 +76,11 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
           <embed src={previewVideo2} className=" w-11/12" />
         </div>
 
+        {/* -------------------------------  Screens ------------------------------- */}
+
         <div className=" text-2xl font-bold">Screens</div>
 
-        <div className="grid grid-cols-3  gap-0.5 bg-black bg-opacity-10 ">
+        <div className="grid grid-cols-2 md:grid-cols-3  gap-0.5 bg-black bg-opacity-10 ">
           <div className=" bg-white flex items-center justify-center ">
             <img src={samImg1} alt=" screen1" className=" img_grid w-8/12 h-auto " />
           </div>
@@ -105,6 +107,9 @@ function Part2({ projectTitle,projectDesc,previewVideo1,previewVideo2,
           </div>
           <div className=" bg-white flex items-center justify-center h-60 ">
             <img src={samImg9} alt=" screen9" className=" img_grid w-10/12 h-auto " />
+          </div>
+          <div className=" visible md:hidden bg-white flex items-center justify-center h-60 ">
+            <img src={samImg7} alt=" screen7" className=" img_grid w-10/12 h-auto " />
           </div>
         </div>
 

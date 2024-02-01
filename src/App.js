@@ -17,7 +17,7 @@ import Savora from './Project _Previews/Savora/Savora';
 import SpaceTour from './Project _Previews/SpaceTour/SpaceTour';
 import GlobalChronicle from './Project _Previews/GlobalChronicle/GlobalChronicle';
 import Edumentor from './Project _Previews/Edumentor/Edumentor';
-// import AnimatedRoutes from './AnimatedRoutes';
+import AnimatedRoutes from './AnimatedRoutes';
 
 
 
@@ -31,9 +31,9 @@ function App() {
     
         <div className={` App ${darkMode && ' bg_pattern  bg_pattern2 text-white'} transition-colors duration-700`}>
              
-             {/* <AnimatedRoutes/> */}
+             <AnimatedRoutes/>
 
-             <Routes>
+             {/* <Routes>
               <Route path='/' element={
             <>
                <div className='sections' id='homeSection'><HomePage/>   </div>
@@ -49,7 +49,7 @@ function App() {
               <Route path='/spaceTour' element={<SpaceTour/>}>  </Route>
               <Route path='/eduMentor' element={<Edumentor/>}>  </Route>
             </Routes>
-    
+     */}
         </div>
     
     

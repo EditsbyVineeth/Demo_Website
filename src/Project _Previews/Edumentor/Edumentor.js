@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Part1 from '../Sections/Part1'
 import Part2 from '../Sections/Part2'
 
@@ -22,28 +22,22 @@ import {motion} from 'framer-motion'
 
 export default function Edumentor() {
 
-  const icons = {
-    hidden: {
-      pathLength: 0,
-      fill: "rgba(255, 255, 255, 0)"
-    },
-    visible: {
-      pathLength: 1,
-      fill: "rgba(255, 255, 255, 1)"
-    }
-  }
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  })
+
+
   return (
     <motion.div className=' flex flex-col md:flex-row '
-    variants={{icons}}
-    // initial={{hidden,opacity:0, scale:0}}
-    // animate={{visible, opacity:1, scale:1}}
-    initial='hidden'
-    animate='visible'
-    exit={{opacity:0}}
-    transition={{duration:1}}
+    initial={{opacity:0.4, transitionDuration:2, width:0}}
+    animate={{opacity:1, transitionDuration:10, width:'100%'}}
+    transition={{ duration:1}}
+    exit={{opacity:0.4, transitionDuration: 2, width:0}}
     >
         <Part1
-         title={'EduMentor'} description={'Learn Any Time, Any Where'}/>
+         title={'EduMentor'} description={'Learn Any Time, Any Where'}
+         liveSite={'https://callmevineeth.github.io/EdMentor02/'}  gitCode={'https://github.com/callmeVineeth/EdMentor02'}
+         />
         
         <Part2 
          previewVideo1={preview1}

@@ -29,10 +29,10 @@ function AnimatedRoutes() {
 
   return (
     <AnimatePresence>
-           <Navbar/>
          <Routes location={location} key={location.pathname}>
               <Route path='/' element={
-            <>
+                <>
+                <Navbar/>
                <div className='sections' id='homeSection'><HomePage/>   </div>
                <div className='sections' id='projectSection'><Projects/>   </div>
                <div className='sections' id='skillSection'><SkillsHome/> </div>
