@@ -107,13 +107,14 @@ function HomePage() {
           >
             Resume
           </button>
-          <button
+          <button 
+           onClick={window.open('https://github.com/callmeVineeth', '_blank')}
             className={` box__shadow ${
               darkMode ? "bg-violet-700 text-white": " bg-black text-white"
             }
               h-10 w-36 md:w-40 rounded-md m-2`}
           >
-            <a href="https://github.com/callmeVineeth" target="_blank"> View GitHub </a>
+            View GitHub 
           </button>
         </div>
       </div>
