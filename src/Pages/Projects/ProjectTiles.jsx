@@ -14,7 +14,7 @@ function ProjectTiles({sampleImg, content}) {
         {/* <img src={sampleImg} alt='projectPic' className='project_pic w-1/2 md:w-full z-0 '/> */}
 
         <div className=' bg-blue-700 overflow-hidden'>
-          <img src={sampleImg} alt='projectPic' className='project_pic z-0 transition-all duration-700 hover:scale-125' />
+          <img src={sampleImg} alt='' className='project_pic z-0 transition-all duration-700 hover:scale-125' />
           </div>
        
 
