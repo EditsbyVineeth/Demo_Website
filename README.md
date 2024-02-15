@@ -23,6 +23,6 @@ There are also different features integrated in this website like page routing, 
 To run this project locally, follow these steps:
 
    ```bash
-   git clone https://github.com/callmeVineeth/Portfolio.git
+   git clone https://github.com/callmeVineeth/Demmo-website.git
    npm install
    npm start
